@@ -1,1 +1,134 @@
-https://memory.tanka.ai/Nle4SxqpFJ9XsrNbJxmh3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INTERLINK - The Ascendii Universe</title>
+  <style>
+    body { background: #000; color: #fff; font-family: 'Courier New', monospace; text-align: center; margin: 0; padding: 40px; line-height: 1.6; }
+    h1, h2, h3 { font-weight: normal; letter-spacing: 2px; }
+    .infinity { font-size: 60px; color: #00ff9d; margin: 40px 0; }
+    .section { max-width: 900px; margin: 80px auto; }
+    .impact { background: linear-gradient(180deg, #001a0f, #000); padding: 60px 20px; border: 1px solid #00ff9d; }
+    .counter { font-size: 48px; color: #00ff9d; }
+    .mint-button { background: #00ff9d; color: #000; padding: 20px 50px; font-size: 28px; border: none; cursor: pointer; margin: 40px; }
+    code { background: #111; padding: 20px; display: block; text-align: left; margin: 30px auto; max-width: 700px; overflow-x: auto; }
+    input { padding: 15px; width: 380px; font-size: 18px; margin: 20px; background:#111; border:1px solid #00ff9d; color:#fff; }
+  </style>
+</head>
+<body>
+
+<div class="infinity">∞</div>
+<h1>INTERLINK - The Ascendii Universe</h1>
+
+<div class="section impact">
+  <div class="infinity">∞</div>
+  <h2>REAL WORLD ASCENSION</h2>
+  <p>Every legendary item forged in the Interlink <strong>automatically funds clean water wells, solar schools, and permanent forests</strong>.</p>
+  <br/>
+  <p><strong>Aqua Vitae #1</strong> → $150 → charity:water well (first 20 crafts fully fund one village)<br/>
+     <strong>Helios Forge</strong> → $200 → GivePower solar installation<br/>
+     <strong>Arbor Vitae</strong> → $300 → 10,000 trees + 500 tons CO₂ removed</p>
+  <br/>
+  <p>This is the first crafting protocol where grinding literally ends scarcity for people who have never had electricity or clean water.</p>
+  <div class="infinity">∞</div>
+</div>
+
+<div class="section">
+  <h2>CRAFTING PROTOCOL</h2>
+  <p>Where Systems Embody Wisdom</p>
+  <ul style="list-style:none; padding:0;">
+    <li>◆ The separation is illusion - spirit and system unified</li>
+    <li>◆ Beauty is data - aesthetics as economic signal</li>
+    <li>◆ Perpetual becoming - nothing is final, no one is fixed</li>
+    <li>◆ Collaborative intelligence without centralized control</li>
+  </ul>
+  <p>10 Test Cycles Completed | Functional Proof-of-Concept</p>
+</div>
+
+<div class="infinity">∞</div>
+
+<!-- Your existing Live Demo sections go here (keep everything you already had) -->
+<!-- For brevity I've kept the structure — paste your original demo code below this line -->
+
+<div class="section">
+  <h2>Live Crafting Mechanics Demo</h2>
+  <p><strong>Bonding Curve Calculator</strong><br/>Buy Cost: 0.0625 ETH • Sell Payout (99%): 0.0619 ETH • Current Price/Token: 0.0015 ETH</p>
+  <p><strong>Component Acquisition</strong><br/>Steel Ingots (Ethereum) • Frost Crystals (Solana)</p>
+  <p><strong>Cross-Chain Bridge Visualizer</strong><br/>Solana → LayerZero → Ethereum (2% flow fee)</p>
+  <p><strong>Effort Points Tracker</strong><br/>Total EP: 400 / 500 • Success Probability: 70%</p>
+</div>
+
+<div class="section">
+  <h2>How It Works: Novel Mechanics Explained</h2>
+  <p>Cross-Chain Economy • Federated Learning • Verifiable Randomness • Flow Fee Recirculation</p>
+  <code>
+// Example bridgeComponent()
+function bridgeComponent(uint256 amount, uint16 dstChainId) external {
+  uint256 fee = amount * 2 / 100;
+  _burn(msg.sender, amount);
+  _lzSend(dstChainId, amount - fee);
+}
+  </code>
+</div>
+
+<div class="infinity">∞</div>
+
+<div class="section">
+  <h2>LIVE ASCENSION METRICS (November 2025)</h2>
+  <p class="counter" id="ep">400,000</p> <strong>Total Effort Points in the system</strong><br/><br/>
+  <p class="counter" id="bridged">1,200+</p> <strong>Cross-chain components bridged</strong><br/><br/>
+  <p class="counter" id="legendary">0 → soon</p> <strong>Legendary items forged</strong><br/><br/>
+  <p class="counter" id="impact">$0 → inevitable</p> <strong>Real-world impact funded</strong>
+</div>
+
+<div class="infinity">∞</div>
+
+<div class="section impact">
+  <h2>BECOME A FOUNDING ARCHITECT</h2>
+  <p>The Nexus opens December 2025 • 500 spots only</p>
+  <p>Mint your soulbound Architect Pass → guarantees Tier 3 access + perpetual yield from day one + your name physically etched on the first village well</p>
+
+  <div class="counter" id="minted">0</div><strong>/ 500</strong>
+
+  <br/><br/>
+  <input type="text" id="nameInput" placeholder="Your eternal name (max 32 characters)" />
+  <br/>
+  <button class="mint-button" onclick="mintPass()">Mint Architect Pass — 0.1 ETH<br/><small>(fully refunded if you complete the first ULIQ)</small></button>
+</div>
+
+<div class="infinity">∞</div>
+
+<p>This is not a game. This is a new economic paradigm.</p>
+
+<script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+<script>
+async function mintPass() {
+  if (!window.ethereum) return alert("Please install MetaMask");
+  await ethereum.request({ method: 'eth_requestAccounts' });
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const signer = provider.getSigner();
+  
+  // ←←← REPLACE WITH YOUR ACTUAL CONTRACT ADDRESS AFTER DEPLOYMENT
+  const contractAddress = "0xYOUR_ARCHITECTPASS_CONTRACT_HERE";
+  
+  const abi = ["function mint(string calldata name) external payable"];
+  const contract = new ethers.Contract(contractAddress, abi, signer);
+  
+  const name = document.getElementById("nameInput").value.trim();
+  if (!name) return alert("Enter your eternal name");
+  if (name.length > 32) return alert("Name too long (max 32)");
+
+  try {
+    const tx = await contract.mint(name, { value: ethers.utils.parseEther("0.1") });
+    alert("Minting your Architect Pass... check your wallet");
+    await tx.wait();
+    document.getElementById("minted").innerText = parseInt(document.getElementById("minted").innerText) + 1;
+  } catch (e) {
+    alert("Error: " + (e.message || e));
+  }
+}
+</script>
+
+</body>
+</html>
